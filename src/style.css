@@ -46,13 +46,17 @@ body {
 
 .btn-generate, .btn-copy {
   border: transparent;
-  width: auto;
+  width: calc(70% - 90px);
   background-color: blueviolet;
   color: white;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
   transition: .2s;
+}
+
+.btn-copy {
+  background-color: rgb(173, 111, 231);
 }
 
 .btn-generate:hover, .btn-copy:hover {
