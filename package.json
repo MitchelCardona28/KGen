@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d ./src",
     "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && npm i --no-fund --no-audit",
     "lint": "eslint . --ext js,jsx,ts --report-unused-disable-directives --max-warnings 0"
   },
