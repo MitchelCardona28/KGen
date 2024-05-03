@@ -6,4 +6,4 @@ const options = {
   nojekyll: true
 }
 
-ghpages.publish('../src/', options, (err) => `<p>${err}</p>`)
+ghpages.publish('../', options, (err) => `<p>${err}</p>`)
