@@ -1,6 +1,8 @@
 const ghpages = require('gh-pages')
 
-ghpages.publish('../src/', {
+const options = {
   branch: 'main',
   repo: 'https://github.com/MitchelCardona28/KGen.git'
-}, (err) => `<p>${err}</p>`)
+}
+
+ghpages.publish('../src/', options, (err) => `<p>${err}</p>`)
