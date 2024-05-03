@@ -1,0 +1,37 @@
+{
+  "name": "kgen",
+  "version": "1.0.0",
+  "description": "KGen generates a strong random password for your application web.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ./",
+    "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && npm i --no-fund --no-audit",
+    "lint": "eslint . --ext js,jsx,ts --report-unused-disable-directives --max-warnings 0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchelCardona28/KGen.git"
+  },
+  "keywords": [
+    "passwords",
+    "keygen",
+    "generators",
+    "random"
+  ],
+  "author": "Mitchel Cardona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MitchelCardona28/KGen/issues"
+  },
+  "homepage": "https://github.com/MitchelCardona28/KGen#readme",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "standard": "^17.1.0",
+    "ts-node": "^10.9.2"
+  }
+}
