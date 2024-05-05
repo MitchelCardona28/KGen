@@ -56,12 +56,14 @@ body {
 }
 
 .btn-copy {
-  background-color: rgb(173, 111, 231);
+  background-color: rgb(224, 199, 250);
+  color: #3D3D3D;
 }
 
 .btn-generate:hover, .btn-copy:hover {
   cursor: pointer;
-  background-color: rgb(167, 88, 241);
+  background-color: rgba(127, 26, 222, 0.612);
+  color: white;
 }
 
 .btn-generate:active, .btn-copy:active {

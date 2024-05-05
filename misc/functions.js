@@ -1,9 +1,10 @@
 import { passwordGenerator } from '../generators/passGen.js'
+import { MAX } from '../const/length.js'
 
 const passwordContainer = document.getElementById('passwordContainer')
 
 export const printPassword = () => {
-  const generatedPassword = passwordGenerator(16)
+  const generatedPassword = passwordGenerator(MAX)
   const printedPassword = `<p>${generatedPassword}</p>`
   passwordContainer.innerHTML = printedPassword
 }
