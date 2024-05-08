@@ -1,7 +1,7 @@
 import { passwordGenerator } from '../generators/passGen.js'
 import { MAX } from '../const/length.js'
 
-const passwordContainer = document.getElementById('passwordContainer')
+const passwordContainer = document.getElementById('password-container')
 
 export const printPassword = () => {
   const generatedPassword = passwordGenerator(MAX)
