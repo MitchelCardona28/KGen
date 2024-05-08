@@ -1,4 +1,4 @@
-import CHARS from '../const/chars.js'
+import { CHARS, SPECIALCHARS } from '../const/chars.js'
 import random from './random.js'
 
 export const passwordGenerator = (length) => {
