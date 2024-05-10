@@ -1,1 +1,1 @@
-export const MAX = 16
+export const MAXLENGTH = 16
