@@ -21,8 +21,8 @@ body {
 
 .app, .passview, .btn-generate, .btn-copy {
   border-radius: 5px;
-  width: 320px;
-  margin: 0 auto;
+  width: 392px;
+  margin: 6px auto;
   padding: 10px;
 }
 
@@ -46,8 +46,10 @@ body {
 
 .btn-generate, .btn-copy {
   border: transparent;
+  border-radius: 20px;
   width: calc(70% - 90px);
-  background-color: blueviolet;
+  background: linear-gradient(to bottom, #2c37ba, #8a2be2ab);
+  box-shadow: inset 0px 8px 60px rgba(0, 0, 0, 0.1), inset 0px -4px 4px rgba(0, 0, 0, 0.1);
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -56,7 +58,7 @@ body {
 }
 
 .btn-copy {
-  background-color: rgb(224, 199, 250);
+  background: linear-gradient(to bottom, #d9d9f5, #eaeafa);
   color: #3D3D3D;
 }
 
@@ -68,4 +70,11 @@ body {
 
 .btn-generate:active, .btn-copy:active {
   background-color: rgb(64, 231, 231);
+}
+
+.customize-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
 }
