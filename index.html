@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="KGen generates a strong random password for your accounts on the web.">
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/generator.css">
+  <link rel="stylesheet" href="./src/checkbox.css">
   <title>KGen - Your Password Generator</title>
 </head>
+
 <body>
   <section class="app">
-    <div class="passview" id="passwordContainer"></div>
+    <div class="passview" id="password-container"></div>
     <section class="btns-container">
       <div class="btn-generate" id="generate">
         <p>Generate</p>
@@ -18,7 +21,14 @@
         <p>Copy</p>
       </div>
     </section>
+
+    <section class="customize-container" id="customizer">
+      <label for="checkbox">Disable special characters</label>
+      <input type="checkbox" name="checkbox" class="checkbox" id="checkbox">
+    </section>
   </section>
+
   <script type="module" src="./src/js/app.js"></script>
 </body>
+
 </html>
