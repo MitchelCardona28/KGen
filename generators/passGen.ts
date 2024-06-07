@@ -1,7 +1,7 @@
-import { CHARS, SPECIALCHARS } from '../const/chars.js'
-import random from './random.js'
+import { CHARS, SPECIALCHARS } from '../const/chars'
+import random from './random'
 
-export const passwordGenerator = (length, excludeSpecialChars) => {
+export const passwordGenerator = (length: number, excludeSpecialChars: boolean) => {
   const passwordChars = excludeSpecialChars ? CHARS.replace(SPECIALCHARS, '') : CHARS
 
   const generatedPassword = Array.from(Array(length), () => {

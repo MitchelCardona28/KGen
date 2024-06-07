@@ -1,13 +1,13 @@
-import { passwordGenerator } from '../generators/passGen.js'
-import { MAXLENGTH } from '../const/length.js'
-import { checkboxInput } from './utils.js'
+import { passwordGenerator } from '../generators/passGen'
+import { LENGTH } from '../const/length'
+import { checkboxInput } from './utils'
 
 const passwordContainerElement = document.getElementById('password-container')
 
 const labelElement = document.querySelector('label')
 
 export const printPassword = () => {
-  const generatedPassword = passwordGenerator(MAXLENGTH, checkboxInput.checked)
+  const generatedPassword = passwordGenerator(LENGTH.MAXLENGTH, checkboxInput.checked)
   const printedPassword = `<p>${generatedPassword}</p>`
   passwordContainerElement.innerHTML = printedPassword
 }
@@ -18,6 +18,6 @@ export const copyPassword = () => {
 }
 
 export const toggleLabelTextContent = () => {
-  const labelText = checkboxInput.checked ? 'Enable special characters' : 'Disable special characters'
+  const labelText: string = checkboxInput.checked ? 'Enable special characters' : 'Disable special characters'
   labelElement.textContent = `${labelText}`
 }
